@@ -26,7 +26,32 @@ Set application prefix, advanced settings, and created a custom role lva_user fo
 ![image](https://github.com/user-attachments/assets/5298ab2d-73ec-46a3-9890-007968715487)
 
 
-3. Update Set Configuration
+2. Update Set Configuration
 Established a dedicated Update Set to track all configuration changes made within this application scope, enabling version control and deployment portability.
 ![image](https://github.com/user-attachments/assets/c5d97a0b-f2af-44e6-a610-32d0e61aae83)
+
+3. Loaner Vehicle Catalog Table and Form
+Created a custom table called Loaner Vehicle Catalog to store information about available vehicles.
+Enabled auto-numbering and applied lva_user access.
+Added fields and Adjusted field layout for optimal form usability
+![image](https://github.com/user-attachments/assets/8ee57a08-e2b6-42a9-8d36-bc9c2604ec83)
+
+4. Application Menu & Navigation Modules
+Created an Application Menu for easy access.
+Defined modules:
+Create New – opens new form
+All – shows list of all vehicle catalog records
+Ensured navigation reflects consistent UI/UX standards.
+![image](https://github.com/user-attachments/assets/e842233e-4f02-491c-a53b-4542028839cc)
+
+5. Data Import (Vehicle Catalog)
+Imported vehicle data using Import Sets and Transform Maps, then successfully populated the Loaner Vehicle Catalog table excel file. Manually attached images to each record post import.
+![image](https://github.com/user-attachments/assets/10f900c7-57e5-4423-bded-6b1dd9adee6a)
+
+
+
+
+
+
+
 
