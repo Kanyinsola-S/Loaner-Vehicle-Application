@@ -48,6 +48,26 @@ Ensured navigation reflects consistent UI/UX standards.
 Imported vehicle data using Import Sets and Transform Maps, then successfully populated the Loaner Vehicle Catalog table excel file. Manually attached images to each record post import.
 ![image](https://github.com/user-attachments/assets/10f900c7-57e5-4423-bded-6b1dd9adee6a)
 
+6. Vehicle Tracker Table and Form
+Built the Vehicle Tracker table to monitor the loan process and vehicle status in the field.
+Added Key fields and organized fields into logical form sections: Return Details and Activity.
+
+![image](https://github.com/user-attachments/assets/6700bb43-89f0-4397-8f00-6b8c49f99707)
+
+8. Vehicle Servicing Table and Form
+Created a Vehicle Servicing table to track maintenance and repairs.
+Added Key fields and organized fields into Forms and assigned a separate role for access management.
+
+![image](https://github.com/user-attachments/assets/91c64c5d-d360-48e2-87d3-ce16e78c2015)
+
+9.  Vehicle Tracker & Servicing  Modules
+Added navigation modules for: All, Open, and Closed records
+Ensured correct filtering based on Trcaker Status and Ticket Status.
+
+![image](https://github.com/user-attachments/assets/8cdba659-37fe-4058-b69f-e351e061910d)
+
+
+
 
 
 
