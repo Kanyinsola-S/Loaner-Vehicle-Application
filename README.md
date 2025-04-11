@@ -94,10 +94,14 @@ Designed a Service Catalog item to allow users to request vehicles.
 
 **Sprint Outcome:**
 By the end of Sprint 1, we had a fully functioning MVP that:
--Captures and stores vehicles available for request.
--Tracks loan requests and vehicle statuses.
--Monitors servicing activities.
--Enables users to request vehicles via the Service Portal.
+
+-Captures and stores vehicles available for request
+
+-Tracks loan requests and vehicle statuses
+
+-Monitors servicing activities
+
+-Enables users to request vehicles via the Service Portal
 
 
 ## Sprint 2 – Feature Enhancement
