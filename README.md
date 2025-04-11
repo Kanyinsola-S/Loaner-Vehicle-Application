@@ -62,16 +62,43 @@ Added Key fields and organized fields into Forms and assigned a separate role fo
 
 9.  Vehicle Tracker & Servicing  Modules
 Added navigation modules for: All, Open, and Closed records
-Ensured correct filtering based on Trcaker Status and Ticket Status.
+Ensured correct filtering based on Tracker Status and Ticket Status.
 
 ![image](https://github.com/user-attachments/assets/8cdba659-37fe-4058-b69f-e351e061910d)
 
+10. Related Lists Configuration
+Established related list relationships between:
+Loaner Vehicle Catalog ↔ Vehicle Tracker
+Loaner Vehicle Catalog ↔ Vehicle Servicing
+Vehicle Tracker ↔ Vehicle Servicing
+
+![image](https://github.com/user-attachments/assets/6ffe1098-c95a-494c-b52f-ccbd1b16aa98)
+
+11. Form UI Policies
+Added dynamic UI policies on the Vehicle Tracker form
+Fields such as Assigned to, Location, and Expected Return Date are mandatory if Vehicle Status = Pending Release or Out on Field
+Return Date, Return Status, and Return Notes become editable and mandatory when Vehicle Status = Returned for Inspection
+![image](https://github.com/user-attachments/assets/19a9f698-682f-466d-b9a7-60a52fcb472a)
+
+12. UI Actions (Custom Buttons)
+Implemented two custom buttons on the Vehicle Tracker form:
+Return to Warehouse – Updates status if vehicle is returned in good condition.
+Send to Repair – Triggers servicing workflow if vehicle needs repairs.
+Buttons are conditionally visible based on form values
+![image](https://github.com/user-attachments/assets/de979650-e2c8-44a7-bc1b-feaa6d9f2b89)
+
+13. Request Loaner Vehicle (Catalog Item Form)
+Designed a Service Catalog item to allow users to request vehicles.
+![image](https://github.com/user-attachments/assets/b9c3464c-cd73-4d48-95ba-7eb77d359532)
 
 
+**Sprint Outcome:**
+By the end of Sprint 1, we had a fully functioning MVP that:
+-Captures and stores vehicles available for request.
+-Tracks loan requests and vehicle statuses.
+-Monitors servicing activities.
+-Enables users to request vehicles via the Service Portal.
 
 
-
-
-
-
+## Sprint 2 – Feature Enhancement
 
