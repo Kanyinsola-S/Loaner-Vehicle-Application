@@ -128,9 +128,29 @@ The focus of Sprint 2 was to elevate the MVP by adding automation, validation, a
 Implemented a client script to auto-fill the Office Location field based on the selected Requested For user.
 Then Validation script to ensure the Return Date is not before the Date Needed. If the validation fails, the return date is cleared and an error message is shown.
 
+![image](https://github.com/user-attachments/assets/0bab6f50-ef1c-4b72-a64c-8d4702873f8a)
 
 3. Request Loaner Vehicle Flow
 Flow Design: Built a ServiceNow Flow to trigger on submission of the catalog item "Request Loaner Vehicle."
+Also created a Group Setup
+THis was created to streamline task assignments, workflow routing, and role-based access. Two distinct groups were defined: **Loaner Vehicle Approvers (with the approver_user role)** to handle approval of vehicle requests, and **Loaner Vehicle Delivery (with the itil role)** to manage fulfillment tasks once approvals are granted. This setup ensures requests are reviewed and approved before being actioned.
 
+To maintain clarity and prevent overlap, each user is assigned to only one group. This separation of duties supports a clean workflow process, simplifies permissions management, and ensures accountability across the approval and fulfillment stages.
+![image](https://github.com/user-attachments/assets/358e695b-e85b-4c3d-a8ed-b64fc421f608)
+![image](https://github.com/user-attachments/assets/f978c5da-b122-40ee-9191-eccb167a725d)
+
+
+3. Access Control Rules (ACLs) and Groups
+ACLs were implemented to ensure proper data security and role-based access within the Loaner Vehicle application.
+The **Loaner Vehicle Catalog and Vehicle Tracker tables** allow all users to read data, but only users with the **lva_user role** can create or edit records, while deletion is restricted to **admins.**
+For the Vehicle Servicing table, only users in the **Maintenance Team role** can read, create, or update records, and again, only admins can delete.
+This setup ensures users can interact with the system based on their responsibilities without compromising data integrity.
+
+New Roles & Groups:
+To support role-based workflows, two specialized user groups were created. 
+**Loaner Vehicle Warehouse Managers** were given full access to all three core tables—Catalog, Tracker, and **Loaner Vehicle Servicing** allowing them to oversee the end-to-end vehicle management process. 
+Meanwhile, the Loaner Vehicle Maintenance Team was restricted to the Vehicle Servicing table, aligning their access strictly with repair and maintenance tasks. 
+This clear separation of duties enforces accountability and prevents unauthorized actions across the application.
+![image](https://github.com/user-attachments/assets/df406d5f-2721-4d20-b2f1-48258c829a14)
 
 
