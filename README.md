@@ -153,4 +153,26 @@ Meanwhile, the Loaner Vehicle Maintenance Team was restricted to the Vehicle Ser
 This clear separation of duties enforces accountability and prevents unauthorized actions across the application.
 ![image](https://github.com/user-attachments/assets/df406d5f-2721-4d20-b2f1-48258c829a14)
 
+4. Notification Setup
+A targeted notification was configured to enhance user communication in the loaner vehicle process. When a vehicle request (RITM) is marked as **Closed Complete** and the item is **Request Loaner Vehicle**, an automated email is sent to the original requester. The email reminds them to return the vehicle with the associated ticket number, reinforcing accountability and closing the loop on the loan process.
+
+## Sprint 3 – Portal Design and Finalization
+
+**Sprint Goal:**
+Automate key processes for better data synchronization and accountability while improving user interaction through a custom Service Portal.
+
+**Overview:**
+The focus of Sprint 3 was to strengthen backend automation and deliver a more user-friendly frontend experience. We introduced business rules that streamline vehicle status management and servicing workflows. Additionally, a basic Service Portal was developed to enhance visibility and accessibility of the loaner vehicle system for end users.
+
+**Completed User Stories & Features:**
+1. Business Rules
+A series of business rules were implemented to automate vehicle status updates and servicing workflows.
+The Vehicle Tracker table drives the status of the associated Loaner Vehicle Catalog record—marking it Unavailable during active use or servicing, Available when returned, and Decommissioned if retired.
+When a vehicle is marked Sent for Servicing, the system checks for existing servicing tickets and auto-generates a new one if none exist, populating key details. To maintain process integrity, users are blocked from closing servicing tickets while the vehicle is still In Service.
+Once servicing is complete and the ticket is closed, the system updates the Vehicle Tracker with the final status and closes the ticket record automatically.
+
+5. Custom Service Portal Development
+A simple Service Portal was built to provide a comprehensive list view of all Loaner Vehicles and their details and a widget that links directly to the Loaner Vehicle Request Catalog Item, allowing easy vehicle requests.
+
+
 
