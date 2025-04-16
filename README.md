@@ -156,6 +156,19 @@ This clear separation of duties enforces accountability and prevents unauthorize
 4. Notification Setup
 A targeted notification was configured to enhance user communication in the loaner vehicle process. When a vehicle request (RITM) is marked as **Closed Complete** and the item is **Request Loaner Vehicle**, an automated email is sent to the original requester. The email reminds them to return the vehicle with the associated ticket number, reinforcing accountability and closing the loop on the loan process.
 
+**Sprint Outcome:**
+By the end of Sprint 2, the system could now:
+
+- Validate input before submission to avoid errors
+
+- Automatically create tracker records and route approvals
+
+- Manage fulfillment through tasks
+
+- Enforce table-level security
+
+- Send closure-based notifications to keep users informed
+
 ## Sprint 3 – Portal Design and Finalization
 
 **Sprint Goal:**
@@ -174,5 +187,52 @@ Once servicing is complete and the ticket is closed, the system updates the Vehi
 5. Custom Service Portal Development
 A simple Service Portal was built to provide a comprehensive list view of all Loaner Vehicles and their details and a widget that links directly to the Loaner Vehicle Request Catalog Item, allowing easy vehicle requests.
 
+**Sprint Outcome:**
+Sprint 3 delivered robust backend automation that ensures data consistency between vehicle records and servicing workflows. 
+The initial version of the Service Portal boosts user engagement by offering a streamlined way to browse vehicles and submit loan requests.
+
+**Additional Features (Backlog Items)**
+These are not mandatory features but add-ons that can further improve the application. In Agile projects, we call these backlog items—ideas or enhancements that are valuable but not immediately prioritized for the main sprints. 
+They can be picked up later based on time, capacity, or user feedback. Some of the proposed backlog features include:
+
+Advanced dashboards and reporting for tracking vehicle usage and servicing trends
+
+Knowledge Base integration for support and user self-service
+
+Enhanced widgets and filters in the Service Portal for a smoother user experience
+
+Real-time request tracking and servicing progress for requesters
 
 
+## Tech Stacks
+Platform: ServiceNow App Engine Studio 
+
+Client-Side: GlideForm APIs, Client Scripts 
+
+Server-Side: Business Rules, Script Includes
+
+Service Portal: Widgets, Catalog Items, UI Pages, HTML & CSS
+
+Source Control: GitHub for backup, version control
+
+## Problems Encountered
+1. Scripting Challenges
+I don’t know how to code, so writing JavaScript for business rules and logic was tough. I had to learn JavaScript basics (still not sure I like it 😂), and it slowed me down at first.
+
+2. Technical Issues with My PDI
+My ServiceNow instance was released, and I got a message warning me.
+I had to back up my app and data using GitHub. Restoring it was stressful—some files failed, and I got errors like "application already exists" or "update set skipped." A real lesson in managing environments.
+
+## Lessons Learned
+Leverage out-of-box solutions to build faster—don’t reinvent the wheel
+
+A working solution doesn’t require advanced coding—logic and persistence go a long way
+
+Documenting and backing up regularly saves time and stress
+
+Always test access and automation as if you’re the end user
+
+## Next Steps
+Keep learning.
+Keep building.
+This is just the beginning.
