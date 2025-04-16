@@ -2,7 +2,6 @@
 A ServiceNow App that automates the process of requesting vehicles from the warehouse.
 
 ## Table of Contents
-## 📑 Table of Contents
 - [Sprint 1 – MVP Development](#sprint-1--mvp-development)
 - [Sprint 2 – Feature Enhancement](#sprint-2--feature-enhancement)
 - [Sprint 3 – Portal Design and Finalization](#sprint-3--portal-design-and-finalization)
