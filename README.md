@@ -186,6 +186,14 @@ Once servicing is complete and the ticket is closed, the system updates the Vehi
 5. Custom Service Portal Development
 A simple Service Portal was built to provide a comprehensive list view of all Loaner Vehicles and their details and a widget that links directly to the Loaner Vehicle Request Catalog Item, allowing easy vehicle requests.
 
+**N:B**
+There are no pictures or demo for sprint 3 and additional features but I am working on that right now by pulling my data back into a new instance.
+I needed to release my instance.
+![image](https://github.com/user-attachments/assets/d7fbe58d-a3e9-4730-9b2d-55bba5c1c631)
+![8CB13310-CE9C-4676-8E64-B158FA61EDA4](https://github.com/user-attachments/assets/7f9f82bc-4e3c-462b-b6ef-51dfb6b0ce71)
+
+
+
 **Sprint Outcome:**
 Sprint 3 delivered robust backend automation that ensures data consistency between vehicle records and servicing workflows. 
 The initial version of the Service Portal boosts user engagement by offering a streamlined way to browse vehicles and submit loan requests.
